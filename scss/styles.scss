@@ -45,6 +45,7 @@
                 font-family: "dosis";
                 font-size:18px;
                 transition:0.3s;
+                cursor:pointer;
                 &:hover {
                     color:#141414;
                     transition:0.3s;
@@ -209,6 +210,16 @@
                     &:hover {
                         color:white;
                         transition:0.4s;
+                    }
+
+                    &::before {
+                        content:"";
+                        background: #141414;
+                        position:absolute;
+                        width: calc(100% + 20px);
+                        left:-10px;
+                        height:2px;
+                        bottom:-4px;
                     }
                 }
             }
