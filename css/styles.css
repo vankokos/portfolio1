@@ -57,6 +57,7 @@
 .header__inner-menu a:hover {
   color: #141414;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .header__inner-menu-item-link-dropdown {

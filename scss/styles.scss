@@ -46,9 +46,11 @@
                 font-size:18px;
                 transition:0.3s;
                 cursor:pointer;
+
                 &:hover {
                     color:#141414;
                     transition:0.3s;
+                    cursor:pointer;
                 }
             }
             list-style: none;
