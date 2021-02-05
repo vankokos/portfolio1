@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Orbitron:wght@600&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/> 
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <script src="leaflet/leaflet.js"></script>
+</head>
+<body id="body">
+    <div id="lightbox"></div>
+    <div id="map">
+        <img src="img/cancel.svg" alt="" id="closemap">
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <img src="img/logo.svg" alt="" srcset="" class="header__inner-logo">
+                <ul class="header__inner-menu">
+                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">HOME</a></li>
+                    <li class="header__inner-menu-item">
+                        <a href="#" class="header__inner-menu-item-link-dropdown" id="dropdown">SHOP</a>
+                        <div class="header__inner-menu-item-link-dropdown-content unactive" id="dropdownContent">
+                            <a href="#">NIKE AIR JORDAN X</a>
+                            <a href="#">NIKE AIR JORDAN XI</a>
+                            <a href="#">NIKE AIR JORDAN I</a>
+                        </div>
+                    </li>
+                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">ABOUT</a></li>
+                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">HISTORY</a></li>
+                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">CONTACTS</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__inner-top">
+                    <div class="main__inner-top-left">
+                        <p>NIKE AIR JORDAN</p>
+                            <h1>Dream It</h1>
+                            <h1>Do it</h1>
+                        <h2>A brand created by a legendary basketball player Michael Jordan,<br> Air Jordan is one of the most popular shoe companies in the world<br> even 40 years after its creation.</h2>
+                        <button>DOWNLOAD OUR APP</button>
+                    </div>
+                    <div class="main__inner-top-right">
+                        <div class="main__inner-top-right-block">
+                            <img src="img/2.png" alt="">
+                            <p>AIR JORDAN JUMPMAN</p>
+                        </div>
+                        <div class="main__inner-top-right-block">
+                            <img src="img/8.png" alt="">
+                            <p>AIR JORDAN XII</p>
+                        </div>
+                        <div class="main__inner-top-right-block">
+                            <img src="img/20.png" alt="">
+                            <p>AIR JORDAN IX</p>
+                        </div>
+                        <div class="main__inner-top-right-block">
+                            <img src="img/30.png" alt="">
+                            <p>AIR JORDAN X</p>
+                        </div>
+                        <div class="main__inner-top-right-block">
+                            <img src="img/40.png" alt="">
+                            <p>AIR JORDAN DUNK LA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__inner-bottom">
+                    <div class="main__inner-bottom-left">
+                        <div class="main__inner-bottom-left-block">
+                            <img src="img/basketball.svg" alt="" srcset="">
+                            <p>Great for athletes!</p>
+                        </div>
+                        <div class="main__inner-bottom-left-block">
+                            <img src="img/jordan-2-logo-svgrepo-com.svg" alt="" srcset="">
+                            <p>100% Original shoes!</p>
+                        </div>
+                        <div class="main__inner-bottom-left-block">
+                            <img src="img/dollar-symbol.svg" alt="" srcset="">
+                            <p>Great prices, and tonnes of sales!</p>
+                        </div>
+                    </div>
+
+                    <div class="main__inner-bottom-right">
+                        <a>Certificate</a>
+                        <a id="mapOpen">Our Stores</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="history">
+        <div class="container">
+            <div class="history__inner">
+                <div class="history__inner-left">
+                    <h1>OUR HISTORY</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, necessitatibus laborum! Voluptatum veniam doloribus eligendi cupiditate illum exercitationem repudiandae? Cum quasi alias, incidunt nobis velit quibusdam modi rerum enim reprehenderit!</p>
+                    <button>READ MORE</button>
+                </div>
+                <div class="history__inner-right">
+                    <div class="history__inner-right-block">
+                        <img src="img/dunk.jpeg" alt="" srcset="">
+                        <p>OUR ROOTS</p>
+                        <h1><div class="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate molestiae corporis ad, asperiores soluta facere illum tempore aliquam atque incidunt voluptate cum ipsam dolorum iure a accusantium vero debitis.</div></h1>
+                    </div>
+                    <div class="history__inner-right-block">
+                        <img src="img/kobejordan.jpg" alt="" srcset="">
+                        <p>LEGENDS</p>
+                        <h1><div class="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate molestiae corporis ad, asperiores soluta facere illum tempore aliquam atque incidunt voluptate cum ipsam dolorum iure a accusantium vero debitis.</div></h1>
+                    </div>
+                    <div class="history__inner-right-block">
+                        <img src="img/russ.jpg" alt="" srcset="">
+                        <p>MAINTAINING OUR LEGACY</p>
+                        <h1><div class="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate molestiae corporis ad, asperiores soluta facere illum tempore aliquam atque incidunt voluptate cum ipsam dolorum iure a accusantium vero debitis.</div></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shoe">
+        <div class="container">
+            <div class="shoe__inner">
+                <div class="shoe__inner-left">
+                    <p>OUR TECHNOLOGIES</p>
+                    <ul class="shoe__inner-left-menu">
+                        <li>Podular Suspension</li>
+                        <li>Air Tech</li>
+                        <li>Clear Outsole</li>
+                        <li>Huarache</li>
+                        <li>Flight Plate</li>
+                        <li>Zoom Air</li>
+                        <li>Carbon Fiber Shank</li>
+                    </ul>
+                </div>
+                <div class="shoe__inner-mid">
+                    <img src="img/30.png" alt="">
+                </div>
+                <div class="shoe__inner-right">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate minima pariatur vel deleniti reprehenderit excepturi vero facere sunt magnam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde provident maiores suscipit sit repellat fugit enim ducimus aliquam architecto praesentium repudiandae, alias sunt aut dolores, perspiciatis eligendi expedita, quos in!</p>
+                    <button>LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__inner">
+                <div class="reviews__inner-top">
+                    <p>REVIEWS</p>
+                </div>
+                <div class="reviews__inner-bottom">
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                    <div class="reviews__inner-bottom-block">
+                        <img src="img/user.svg" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum blanditiis eum rerum nisi non enim temporibus architecto nemo pariatur, tenetur quas voluptatibus sunt distinctio quod excepturi corporis nesciunt eos suscipit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__inner-left">
+                    <img src="img/Michael-Jordan-American-Basketball-Player-PNG-Pic.png" alt="">
+                </div>
+                <div class="contact__inner-right">
+                    <p>DO YOU WANT US TO SEND YOU FREQUENT UPDATES?</p>
+                    <h1>We will make sure you're up-to-date with all information about sales, new shoes etc.</h1>
+                    <input type="text" placeholder="NAME">
+                    <input type="text" placeholder="E-MAIL" id ="email">
+                    <button id="emailSubm">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner-top">
+                    <button>DOWNLOAD OUR APP</button>
+                    <ul>
+                        <li class="footer__inner-top-item"><a href="#" class="footer__inner-top-item-link">HOME</a></li>
+                        <li class="footer__inner-top-item"><a href="#" class="footer__inner-top-item-link">SHOP</a></li>
+                        <li class="footer__inner-top-item"><a href="#" class="footer__inner-top-item-link">ABOUT</a></li>
+                        <li class="footer__inner-top-item"><a href="#" class="footer__inner-top-item-link">HISTORY</a></li>
+                        <li class="footer__inner-top-item"><a href="#" class="footer__inner-top-item-link">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <div class="footer__inner-bottom">
+                    <ul>
+                        <li><img src="img/facebook.svg" alt="" srcset=""></li>
+                        <li><img src="img/youtube.svg" alt="" srcset=""></li>
+                        <li><img src="img/instagram.svg" alt="" srcset=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/mapSet.js"></script>
+    <script src="js/mapPopup.js"></script>
+    <script src="js/reviewsSlider.js"></script>
+    <script src="js/email.js"></script>
+</body>
+</html>
