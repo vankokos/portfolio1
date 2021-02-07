@@ -89,12 +89,10 @@
                                 font-weight:300;
                                 font-size:17px;
                                 transition:0.3s;
-                                cursor:pointer;
+                                cursor: pointer;
                                 &::before {
                                     content:"▼";
                                     font-size:10px;
-                                    // margin-left: 3px;
-                                    // margin-top: -2px;
                                 }
                                 &:hover {
                                     color:white;
@@ -106,6 +104,17 @@
                                     a {
                                         margin-bottom: 10px;
                                         margin-top: 10px;
+                                        color:white;
+                                        background:$firm-color;
+                                        width:170px;
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        &:hover {
+                                            background:white;
+                                        }
                                     }
                                 }
                             }

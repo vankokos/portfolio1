@@ -13,19 +13,22 @@ slideoutBtn.addEventListener("click", function () {
 
 var li = document.querySelectorAll(".header__inner-menu-item-burger-dropdown-li")
 var underLi = document.querySelectorAll(".header__inner-menu-item-burger-dropdown-li div")
+var p = document.querySelectorAll(".header__inner-menu-item-burger-dropdown-li p")
 
 
 for(let i = 0; i<li.length; i++) {
-    li[i].addEventListener("click", function() {
-        for (let i = 0; i < underLi.length; i++) {
-            if(underLi[i].classList.contains("unactive") == true) {
-                underLi[i].classList.add("activeFlex")
-                underLi[i].classList.remove("unactive")
-            } else {
-                underLi[i].classList.remove("activeFlex")
-                underLi[i].classList.add("unactive")
-            }
-        }
+    li[i].addEventListener("click", function(e) {
+        
+        console.log(e.target.querySelector("div"))
+        var div = e.target.querySelector("div")
+        if(div.classList.contains("unactive") == true) {
+            div.classList.add("activeFlex")
+            div.classList.remove("unactive")
+        } else {
+            div.classList.remove("activeFlex")
+            div.classList.add("unactive")
+        } 
+
     })
 } 
 
