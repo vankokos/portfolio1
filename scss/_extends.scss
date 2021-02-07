@@ -1,1 +1,14 @@
-
+.button {
+    outline:none;
+    font-family: "roboto condensed";
+    background:white;
+    border:2px solid #141414;
+    width:175px;
+    height:45px;
+    transition:0.4s;
+    cursor:pointer;
+    &:hover {
+        background:#efa91c;
+        transition:0.4s;
+    }
+}

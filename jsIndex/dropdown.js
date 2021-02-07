@@ -6,7 +6,7 @@ btn.addEventListener("mouseover", dropdownOpen)
 btn.addEventListener("mouseleave", function() {
     timer = setTimeout(() => {
         dropdownClose()
-    }, 500);
+    }, 250);
 })
 
 dropdownContent.addEventListener("mouseover", function() {

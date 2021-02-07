@@ -23,16 +23,16 @@
             <div class="header__inner">
                 <img src="img/logo.svg" alt="" srcset="" class="header__inner-logo">
                 <ul class="header__inner-menu">
-                    <li class="header__inner-menu-item"><a href="#" class="header__inner-menu-item-link">HOME</a></li>
+                    <li class="header__inner-menu-item"><a class="header__inner-menu-item-link" id="btnMain">HOME</a></li>
                     <li class="header__inner-menu-item">
-                        <a href="#" class="header__inner-menu-item-link-dropdown" id="dropdown">SHOP</a>
+                        <a href="shop.html" class="header__inner-menu-item-link-dropdown" id="dropdown">SHOP</a>
                         <div class="header__inner-menu-item-link-dropdown-content unactive" id="dropdownContent">
                             <a href="#">NIKE AIR JORDAN X</a>
                             <a href="#">NIKE AIR JORDAN XI</a>
                             <a href="#">NIKE AIR JORDAN I</a>
                         </div>
                     </li>
-                    <li class="header__inner-menu-item"><a class="header__inner-menu-item-link" id = "scrollAbout">ABOUT</a></li>
+                    <li class="header__inner-menu-item"><a class="header__inner-menu-item-link" id = "btnAbout">ABOUT</a></li>
                     <li class="header__inner-menu-item"><a class="header__inner-menu-item-link" id="btnHistory">HISTORY</a></li>
                     <li class="header__inner-menu-item"><a class="header__inner-menu-item-link" id="btnContact">CONTACTS</a></li>
                 </ul>
@@ -40,7 +40,7 @@
         </div>
     </header>
 
-    <section class="main">
+    <section class="main" id="main">
         <div class="container">
             <div class="main__inner">
                 <div class="main__inner-top">
@@ -49,7 +49,9 @@
                             <h1>Dream It</h1>
                             <h1>Do it</h1>
                         <h2>A brand created by a legendary basketball player Michael Jordan,<br> Air Jordan is one of the most popular shoe companies in the world<br> even 40 years after its creation.</h2>
-                        <button>DOWNLOAD OUR APP</button>
+                        <form action="https://www.apple.com/ru/app-store/" target="_blank">
+                            <button href="https://www.apple.com/ru/app-store/">DOWNLOAD OUR APP</button>
+                        </form>
                     </div>
                     <div class="main__inner-top-right">
                         <div class="main__inner-top-right-block">
@@ -103,25 +105,25 @@
         <div class="container">
             <div class="history__inner">
                 <div class="history__inner-left">
-                    <h1>OUR HISTORY</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, necessitatibus laborum! Voluptatum veniam doloribus eligendi cupiditate illum exercitationem repudiandae? Cum quasi alias, incidunt nobis velit quibusdam modi rerum enim reprehenderit!</p>
+                    <h1>HISTORY</h1>
+                    <p>Jonesy, Beaver, Henry and Pete reunite for their annual hunting trip at the Hole-in-the-Wall, an isolated lodge in the Jefferson Tract. There, they become caught between an alien invasion and an insane US Army Colonel, Abraham Kurtz. </p>
                     <button>READ MORE</button>
                 </div>
                 <div class="history__inner-right">
                     <div class="history__inner-right-block">
                         <img src="img/dunk.jpeg" alt="" srcset="">
                         <p>OUR ROOTS</p>
-                        <h1><div class="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate molestiae corporis ad, asperiores soluta facere illum tempore aliquam atque incidunt voluptate cum ipsam dolorum iure a accusantium vero debitis.</div></h1>
+                        <h1><div class="4">As she starts her trek, it starts to snow - the blowing wind, along with the snow, makes it difficult for her to find her way and she becomes afraid of being lost in the storm.</div></h1>
                     </div>
                     <div class="history__inner-right-block">
                         <img src="img/kobejordan.jpg" alt="" srcset="">
                         <p>LEGENDS</p>
-                        <h1><div class="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate molestiae corporis ad, asperiores soluta facere illum tempore aliquam atque incidunt voluptate cum ipsam dolorum iure a accusantium vero debitis.</div></h1>
+                        <h1><div class="4">As her impending death draws near, Stella encounters more apparitions of the dead of Goat Island, and she makes peace with the knowledge that it is her time to go.</div></h1>
                     </div>
                     <div class="history__inner-right-block">
                         <img src="img/russ.jpg" alt="" srcset="">
                         <p>MAINTAINING OUR LEGACY</p>
-                        <h1><div class="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate molestiae corporis ad, asperiores soluta facere illum tempore aliquam atque incidunt voluptate cum ipsam dolorum iure a accusantium vero debitis.</div></h1>
+                        <h1><div class="4">Other ancient historians and philosophers who believed in the existence of Atlantis were Strabo and Posidonius. Some have theorized that, the "Pillars of Hercules" may have applied on the Gulf of Laconia</div></h1>
                     </div>
                 </div>
             </div>
@@ -132,7 +134,7 @@
         <div class="container">
             <div class="shoe__inner">
                 <div class="shoe__inner-left">
-                    <p>OUR TECHNOLOGIES</p>
+                    <p>TECHNOLOGIES</p>
                     <ul class="shoe__inner-left-menu">
                         <li>Podular Suspension</li>
                         <li>Air Tech</li>
@@ -251,21 +253,25 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__inner-top">
-                    <button>DOWNLOAD OUR APP</button>
-                    <ul>
-                        <li class="footer__inner-top-item"><a href="#" class="footer__inner-top-item-link">HOME</a></li>
-                        <li class="footer__inner-top-item"><a href="#" class="footer__inner-top-item-link">SHOP</a></li>
-                        <li class="footer__inner-top-item"><a href="#" class="footer__inner-top-item-link">ABOUT</a></li>
-                        <li class="footer__inner-top-item"><a href="#" class="footer__inner-top-item-link">HISTORY</a></li>
-                        <li class="footer__inner-top-item"><a href="#" class="footer__inner-top-item-link">CONTACTS</a></li>
-                    </ul>
+                <div class="footer__inner-left">
+                    <form action="https://www.apple.com/ru/app-store/" target="_blank">
+                        <button>DOWNLOAD OUR APP</button>
+                    </form>
                 </div>
-                <div class="footer__inner-bottom">
+                <div class="footer__inner-right">
                     <ul>
-                        <li><img src="img/facebook.svg" alt="" srcset=""></li>
-                        <li><img src="img/youtube.svg" alt="" srcset=""></li>
-                        <li><img src="img/instagram.svg" alt="" srcset=""></li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="img/facebook.svg" alt="" srcset=""></li>
+                            </a>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <img src="img/youtube.svg" alt="" srcset=""></li>
+                            </a>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="img/instagram.svg" alt="" srcset=""></li>
+                            </a>
                     </ul>
                 </div>
             </div>
@@ -275,12 +281,12 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="slick/slick/slick.min.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/dropdown.js"></script>
-    <script src="js/mapSet.js"></script>
-    <script src="js/mapPopup.js"></script>
-    <script src="js/reviewsSlider.js"></script>
-    <script src="js/email.js"></script>
-    <script src="js/scroll.js"></script>
+    <script src="jsIndex/slider.js"></script>
+    <script src="jsIndex/dropdown.js"></script>
+    <script src="jsIndex/mapSet.js"></script>
+    <script src="jsIndex/mapPopup.js"></script>
+    <script src="jsIndex/reviewsSlider.js"></script>
+    <script src="jsIndex/email.js"></script>
+    <script src="jsIndex/scroll.js"></script>
 </body>
 </html>

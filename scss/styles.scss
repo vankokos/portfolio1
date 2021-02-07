@@ -19,7 +19,7 @@
 }
 
 .header {
-    background: rgb(176,19,1);
+    background: $firm-color;
     padding-top: 12px;
     padding-bottom: 12px;
     position: fixed;
@@ -48,7 +48,7 @@
                 cursor:pointer;
 
                 &:hover {
-                    color:#141414;
+                    color:$dark-color;
                     transition:0.3s;
                     cursor:pointer;
                 }
@@ -78,7 +78,7 @@
                             width:200px;
                             z-index:100;
                             a {
-                                color:#141414;
+                                color:$dark-color;
                                 margin-bottom: 10px;
                                 &:hover {
                                     color:white;
@@ -122,18 +122,7 @@
                     line-height: 30px;
                 }
                 button {
-                    outline:none;
-                    font-family: "roboto condensed";
-                    background:white;
-                    border:2px solid #141414;
-                    width:175px;
-                    height:45px;
-                    transition:0.4s;
-                    cursor:pointer;
-                    &:hover {
-                        background:#efa91c;
-                        transition:0.4s;
-                    }
+                    @extend .button;
                 }
             }
 
@@ -158,7 +147,7 @@
                 &-block {
                     width:130px;
                     height:130px;
-                    border:2px solid #141414;
+                    border:2px solid $dark-color;
                     margin-right: 30px;
                     display: flex;
                     flex-direction: column;
@@ -186,6 +175,7 @@
                 display: flex;
                 align-items: flex-end;
                 margin-left: 310px;
+                padding-bottom: 4px;
                 a {
                     margin-right: 100px;
                     font-family: "dosis";
@@ -195,7 +185,7 @@
                     cursor:pointer;
                     &::after{
                         content: "";
-                        background: #141414;
+                        background: $dark-color;
                         mix-blend-mode: exclusion;
                         width: calc(100% + 20px);
                         height: 0;
@@ -216,7 +206,7 @@
 
                     &::before {
                         content:"";
-                        background: #141414;
+                        background: $dark-color;
                         position:absolute;
                         width: calc(100% + 20px);
                         left:-10px;
@@ -252,18 +242,7 @@
                 line-height: 30px;
             }
             button {
-                outline:none;
-                font-family: "roboto condensed";
-                background:white;
-                border:2px solid #141414;
-                width:175px;
-                height:45px;
-                transition:0.4s;
-                cursor:pointer;
-                &:hover {
-                    background:#efa91c;
-                    transition:0.4s;
-                }
+                @extend .button;
             }
         }
 
@@ -272,7 +251,7 @@
             &-block {
                 width:300px;
                 padding:10px;
-                border:1px solid #141414;
+                border:2px solid $dark-color;
                 margin-right: 15px;
                 img {
                     width:100%;
@@ -282,16 +261,14 @@
                 p {
                     font-family:"dosis";
                     font-size:20px;
-                    margin-bottom: 2px;
                     text-align: center;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
                 h1 {
                     font-family:"roboto condensed";
                     font-weight: 300;
                     font-size:15px;
-                    margin-bottom: 2px;
-                    text-align: center;
+                    text-align: start;
                 }
             }
         }
@@ -317,37 +294,13 @@
                 li {
                     font-family:"dosis";
                     font-size:17px;
-                    margin-bottom: 2px;
-                    margin-bottom: 30px;
-                    margin-bottom: 40px;
+                    margin-bottom: 25px;
                     position: relative;
-                    &:nth-child(1) {
-                        width:300px;
-                    }
-                    &:nth-child(2) {
-                        width:200px;
-                    }
-                    &:nth-child(3) {
-                        width:150px;
-                    }
-                    &:nth-child(4) {
-                        width:100px;
-                        text-align: start;
-                    }
-                    &:nth-child(5) {
-                        width:150px;
-                    }
-                    &:nth-child(6) {
-                        width:200px;
-                    }
-                    &:nth-child(7) {
-                        width:300px;
-                    }
 
                     &::after {
                         content:"---";
-                        background:rgb(176,19,1);
-                        color:rgb(176,19,1);
+                        background:$firm-color;
+                        color:$firm-color;
                         border-radius: 100px;
                         margin-left: 10px;
                     }
@@ -373,26 +326,15 @@
             }
 
             button {
-                outline:none;
-                font-family: "roboto condensed";
-                background:white;
-                border:2px solid #141414;
-                width:175px;
-                height:45px;
-                transition:0.4s;
-                margin-top: 30px;
-                cursor:pointer;
-                &:hover {
-                    background:#efa91c;
-                    transition:0.4s;
-                }
+                @extend .button;
+                margin-top: 10px;
             }
         }
     }
 }
 
 .reviews {
-    background:#141414;
+    background:$dark-color;
     padding-top: 60px;
     padding-bottom: 100px;
     &__inner {
@@ -408,7 +350,7 @@
             &-block {
                 border:2px solid white;
                 padding-top: 10px;
-                background:#141414;
+                background:$dark-color;
                 padding:20px;
                 padding-top:30px;
                 padding-bottom:70px;
@@ -442,7 +384,7 @@
             display: flex;
             flex-direction: column;
             p {
-                color:#141414;
+                color:$dark-color;
                 font-family:"roboto condensed";
                 font-size:30px;
                 margin-bottom: 5px;
@@ -454,19 +396,8 @@
                 margin-bottom: 2px;
             }
             button {
-                outline:none;
-                font-family: "roboto condensed";
-                background:white;
-                border:2px solid #141414;
-                width:175px;
-                height:45px;
-                transition:0.4s;
+                @extend .button;
                 margin-top: 30px;
-                cursor:pointer;
-                &:hover {
-                    background:#efa91c;
-                    transition:0.4s;
-                }
             }
 
             input {
@@ -475,7 +406,7 @@
                 font-size:20px;
                 border:none;
                 outline:none;
-                border-bottom:2px solid #141414;
+                border-bottom:2px solid $dark-color;
             }
         }
         &-left {
@@ -487,51 +418,27 @@
 }
 
 .footer {
-    background:rgb(176,19,1);
+    background:$firm-color;
     padding-top: 30px;
     padding-bottom: 20px;
-    a {
-        text-decoration: none;
-        color:#FDFFFC;
-        margin-right: 40px;
-        font-family: "dosis";
-        font-size:18px;
-        transition:0.3s;
-        &:hover {
-            color:#141414;
-            transition:0.3s;
-        }
-    }
     ul {
         list-style: none;
         display: flex;
     }
 
     button {
-        outline:none;
-        font-family: "roboto condensed";
-        background:white;
-        border:2px solid #141414;
-        width:175px;
-        height:45px;
-        transition:0.4s;
-        cursor:pointer;
-        margin-right: 50px;
-        &:hover {
-            background:#efa91c;
-            transition:0.4s;
-        }
+        @extend .button;
     }
     &__inner {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        &-top {
+        &-left {
             align-items: center;
             display: flex;
             margin-bottom: 10px;
         }
-        &-bottom {
+        &-right {
             img {
                 height:30px;
                 margin-right: 30px;
@@ -559,7 +466,7 @@
 #map {
     height:500px;
     width:500px;
-    border:3px solid #141414;
+    border:3px solid $dark-color;
     margin-left: -250px;
     margin-top: -250px;
     z-index:1000;

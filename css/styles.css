@@ -1,4 +1,20 @@
 @charset "UTF-8";
+.button, .main__inner-top-left button, .history__inner-left button, .shoe__inner-right button, .contact__inner-right button, .footer button {
+  outline: none;
+  font-family: "roboto condensed";
+  background: white;
+  border: 2px solid #141414;
+  width: 175px;
+  height: 45px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover, .main__inner-top-left button:hover, .history__inner-left button:hover, .shoe__inner-right button:hover, .contact__inner-right button:hover, .footer button:hover {
+  background: #efa91c;
+  transition: 0.4s;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -127,22 +143,6 @@
   line-height: 30px;
 }
 
-.main__inner-top-left button {
-  outline: none;
-  font-family: "roboto condensed";
-  background: white;
-  border: 2px solid #141414;
-  width: 175px;
-  height: 45px;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.main__inner-top-left button:hover {
-  background: #efa91c;
-  transition: 0.4s;
-}
-
 .main__inner-top-right {
   width: 700px;
 }
@@ -200,6 +200,7 @@
   display: flex;
   align-items: flex-end;
   margin-left: 310px;
+  padding-bottom: 4px;
 }
 
 .main__inner-bottom-right a {
@@ -272,22 +273,6 @@
   line-height: 30px;
 }
 
-.history__inner-left button {
-  outline: none;
-  font-family: "roboto condensed";
-  background: white;
-  border: 2px solid #141414;
-  width: 175px;
-  height: 45px;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.history__inner-left button:hover {
-  background: #efa91c;
-  transition: 0.4s;
-}
-
 .history__inner-right {
   display: flex;
 }
@@ -295,7 +280,7 @@
 .history__inner-right-block {
   width: 300px;
   padding: 10px;
-  border: 1px solid #141414;
+  border: 2px solid #141414;
   margin-right: 15px;
 }
 
@@ -308,17 +293,15 @@
 .history__inner-right-block p {
   font-family: "dosis";
   font-size: 20px;
-  margin-bottom: 2px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .history__inner-right-block h1 {
   font-family: "roboto condensed";
   font-weight: 300;
   font-size: 15px;
-  margin-bottom: 2px;
-  text-align: center;
+  text-align: start;
 }
 
 .shoe {
@@ -345,39 +328,8 @@
 .shoe__inner-left-menu li {
   font-family: "dosis";
   font-size: 17px;
-  margin-bottom: 2px;
-  margin-bottom: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   position: relative;
-}
-
-.shoe__inner-left-menu li:nth-child(1) {
-  width: 300px;
-}
-
-.shoe__inner-left-menu li:nth-child(2) {
-  width: 200px;
-}
-
-.shoe__inner-left-menu li:nth-child(3) {
-  width: 150px;
-}
-
-.shoe__inner-left-menu li:nth-child(4) {
-  width: 100px;
-  text-align: start;
-}
-
-.shoe__inner-left-menu li:nth-child(5) {
-  width: 150px;
-}
-
-.shoe__inner-left-menu li:nth-child(6) {
-  width: 200px;
-}
-
-.shoe__inner-left-menu li:nth-child(7) {
-  width: 300px;
 }
 
 .shoe__inner-left-menu li::after {
@@ -410,20 +362,7 @@
 }
 
 .shoe__inner-right button {
-  outline: none;
-  font-family: "roboto condensed";
-  background: white;
-  border: 2px solid #141414;
-  width: 175px;
-  height: 45px;
-  transition: 0.4s;
-  margin-top: 30px;
-  cursor: pointer;
-}
-
-.shoe__inner-right button:hover {
-  background: #efa91c;
-  transition: 0.4s;
+  margin-top: 10px;
 }
 
 .reviews {
@@ -495,20 +434,7 @@
 }
 
 .contact__inner-right button {
-  outline: none;
-  font-family: "roboto condensed";
-  background: white;
-  border: 2px solid #141414;
-  width: 175px;
-  height: 45px;
-  transition: 0.4s;
   margin-top: 30px;
-  cursor: pointer;
-}
-
-.contact__inner-right button:hover {
-  background: #efa91c;
-  transition: 0.4s;
 }
 
 .contact__inner-right input {
@@ -530,55 +456,24 @@
   padding-bottom: 20px;
 }
 
-.footer a {
-  text-decoration: none;
-  color: #FDFFFC;
-  margin-right: 40px;
-  font-family: "dosis";
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  color: #141414;
-  transition: 0.3s;
-}
-
 .footer ul {
   list-style: none;
   display: flex;
 }
 
-.footer button {
-  outline: none;
-  font-family: "roboto condensed";
-  background: white;
-  border: 2px solid #141414;
-  width: 175px;
-  height: 45px;
-  transition: 0.4s;
-  cursor: pointer;
-  margin-right: 50px;
-}
-
-.footer button:hover {
-  background: #efa91c;
-  transition: 0.4s;
-}
-
 .footer__inner {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
-.footer__inner-top {
+.footer__inner-left {
   align-items: center;
   display: flex;
   margin-bottom: 10px;
 }
 
-.footer__inner-bottom img {
+.footer__inner-right img {
   height: 30px;
   margin-right: 30px;
   transform: scale(1);
@@ -586,7 +481,7 @@
   cursor: pointer;
 }
 
-.footer__inner-bottom img:hover {
+.footer__inner-right img:hover {
   transform: scale(1.2);
   transition: 0.4s;
 }

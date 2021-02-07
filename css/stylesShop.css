@@ -1,0 +1,138 @@
+@charset "UTF-8";
+.button {
+  outline: none;
+  font-family: "roboto condensed";
+  background: white;
+  border: 2px solid #141414;
+  width: 175px;
+  height: 45px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #efa91c;
+  transition: 0.4s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.active {
+  display: block;
+}
+
+.unactive {
+  display: none;
+}
+
+.activeFlex {
+  display: flex;
+}
+
+.header {
+  background: #b01301;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__inner-logo {
+  height: 60px;
+  transform: scaleX(-1);
+}
+
+.header__inner-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header__inner-menu a {
+  text-decoration: none;
+  color: #FDFFFC;
+  margin-right: 40px;
+  font-family: "dosis";
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header__inner-menu a:hover {
+  color: #141414;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header__inner-menu-item-burger {
+  height: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__inner-menu-item-burger:hover {
+  transform: rotate(90deg);
+  transition: 0.4s;
+}
+
+.header__inner-menu-item-burger-dropdown {
+  width: 100%;
+  height: 100%;
+  margin-left: -82px;
+  margin-top: 25px;
+  position: fixed;
+  background: rgba(20, 20, 20, 0.2);
+  padding-left: 30px;
+  padding-top: 30px;
+  overflow-y: scroll;
+}
+
+.header__inner-menu-item-burger-dropdown ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__inner-menu-item-burger-dropdown ul li {
+  margin-bottom: 10px;
+  font-family: "roboto condensed";
+  font-weight: 300;
+  font-size: 17px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header__inner-menu-item-burger-dropdown ul li::before {
+  content: "▼";
+  font-size: 10px;
+}
+
+.header__inner-menu-item-burger-dropdown ul li:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.header__inner-menu-item-burger-dropdown ul li div {
+  flex-direction: column;
+}
+
+.header__inner-menu-item-burger-dropdown ul li div a {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=stylesShop.css.map */
