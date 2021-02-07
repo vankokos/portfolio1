@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.button {
+.button, .header__inner-menu-item-cart-content-bottom button, .main__inner-grid-item-btn {
   outline: none;
   font-family: "roboto condensed";
   background: white;
@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover, .header__inner-menu-item-cart-content-bottom button:hover, .main__inner-grid-item-btn:hover {
   background: #efa91c;
   transition: 0.4s;
 }
@@ -77,6 +77,77 @@
   cursor: pointer;
 }
 
+.header__inner-menu-item-cart {
+  position: relative;
+}
+
+.header__inner-menu-item-cart-img {
+  cursor: pointer;
+  height: 35px;
+  margin-right: 40px;
+}
+
+.header__inner-menu-item-cart-content {
+  background: rgba(213, 127, 127, 0.8);
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  right: 1%;
+  z-index: 20000;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  overflow-y: scroll;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header__inner-menu-item-cart-content-top {
+  font-family: "dosis";
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.header__inner-menu-item-cart-content-item {
+  height: 100px;
+  border: 2px solid black;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.header__inner-menu-item-cart-content-item-delete {
+  height: 30px;
+  cursor: pointer;
+}
+
+.header__inner-menu-item-cart-content-item-shoe {
+  height: 100px;
+}
+
+.header__inner-menu-item-cart-content-item-price {
+  font-family: "dosis";
+  font-size: 20px;
+}
+
+.header__inner-menu-item-cart-content-bottom {
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__inner-menu-item-cart-content-bottom button {
+  margin-bottom: 10px;
+}
+
+.header__inner-menu-item-cart-content-bottom button:first-child {
+  margin-right: 10px;
+}
+
 .header__inner-menu-item-burger {
   height: 30px;
   transition: 0.4s;
@@ -91,11 +162,11 @@
 
 .header__inner-menu-item-burger-dropdown {
   width: 100%;
-  height: 100%;
-  margin-left: -82px;
+  height: 90%;
+  margin-left: -87px;
   margin-top: 25px;
   position: fixed;
-  background: rgba(20, 20, 20, 0.2);
+  background: grey;
   padding-left: 30px;
   padding-top: 30px;
   overflow-y: scroll;
@@ -146,5 +217,36 @@
 
 .header__inner-menu-item-burger-dropdown ul li div a:hover {
   background: white;
+}
+
+.main {
+  padding-top: 150px;
+}
+
+.main__inner-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+.main__inner-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.main__inner-grid-item-img {
+  height: 90px;
+}
+
+.main__inner-grid-item-price {
+  font-family: "dosis";
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=stylesShop.css.map */

@@ -28,11 +28,15 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        img {
-            height:60px;
-        }
+        align-items: center;
         &-logo {
+            height:60px;
             transform:scaleX(-1);
+        }
+
+        &-hamburger {
+            display: none;
+            height:30px;
         }
 
         &-menu {
@@ -225,7 +229,7 @@
         display: flex;
         justify-content: space-between;
         &-left {
-            width:300px;
+            width:400px;
             margin-right: 40px;
             h1 {
                 font-family:"roboto condensed";
@@ -240,6 +244,7 @@
                 font-weight: 300;
                 margin-bottom: 30px;
                 line-height: 30px;
+                width:300px;
             }
             button {
                 @extend .button;
@@ -489,4 +494,110 @@
 
 body {
     position:relative;
+}
+
+@media (max-width:1285px) {
+    .container {
+        width:1000px;
+    }
+
+    .main {
+        &__inner {
+            &-top{
+                &-left {
+                    padding-left: 0px;
+                }
+            }
+            &-bottom {
+                &-right {
+                    margin-left: 110px;
+                    a {
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .history {
+        &__inner {
+            &-left {
+                p {
+                    width:200px;
+                }
+            }
+            &-right {
+                &-block {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    .shoe {
+        &__inner {
+            &-left {
+
+            }
+            &-mid {
+                img {
+                    height:300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1080px) {
+    .container {
+        width:800px;
+    }
+
+    .header {
+        &__inner {
+            &-hamburger {
+                display: block;
+            }
+            &-menu {
+                display: none;
+            }
+        }
+    }
+    
+    .main {
+        &__inner {
+            &-top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-left {
+                    text-align: center;
+                }
+                &-right {
+                    width:500px;
+                    &-block {
+                        img {
+                            height:300px;
+                        }
+                    }
+                }
+            }
+            &-bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-left {
+                    display: flex;
+                    // justify-content: space-between;
+
+                    &-block {
+                        margin-right: 0px;
+                    }
+                }
+                &-right {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
 }
