@@ -212,9 +212,23 @@
 }
 
 .main {
-    padding-top: 150px;
+    padding-top: 130px;
     padding-bottom: 75px;
     &__inner {
+        &-title {
+            font-family:"roboto condensed";
+            font-size:30px;
+            margin-bottom: 2px;
+            margin-bottom: 20px;
+            position:relative;
+            &::after {
+                content: "";
+                position:absolute;
+                width:10%;
+                height:2px;
+                background:black;
+            }
+        }
         &-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);

@@ -240,8 +240,24 @@
 }
 
 .main {
-  padding-top: 150px;
+  padding-top: 130px;
   padding-bottom: 75px;
+}
+
+.main__inner-title {
+  font-family: "roboto condensed";
+  font-size: 30px;
+  margin-bottom: 2px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.main__inner-title::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 2px;
+  background: black;
 }
 
 .main__inner-grid {
