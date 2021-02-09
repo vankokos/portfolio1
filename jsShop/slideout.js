@@ -1,10 +1,12 @@
 var slideout = document.getElementById("slideout")
 var slideoutBtn = document.getElementById("slideoutBtn")
+var cart = document.getElementById("content")
 
 slideoutBtn.addEventListener("click", function () {
     if(slideout.classList.contains("unactive") == true) {
         slideout.classList.add("active") 
         slideout.classList.remove("unactive")
+        cart.classList.add("unactive")
     } else {
         slideout.classList.add("unactive")
         slideout.classList.remove("active")
@@ -12,7 +14,7 @@ slideoutBtn.addEventListener("click", function () {
 })
 
 var li = document.querySelectorAll(".header__inner-menu-item-burger-dropdown-li")
-var underLi = document.querySelectorAll(".header__inner-menu-item-burger-dropdown-li div")
+// var underLi = document.querySelectorAll(".header__inner-menu-item-burger-dropdown-li div")
 var p = document.querySelectorAll(".header__inner-menu-item-burger-dropdown-li p")
 
 

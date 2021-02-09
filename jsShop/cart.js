@@ -1,10 +1,12 @@
 var btn = document.getElementById("cart")
 var content = document.getElementById("content")
+var slideout = document.getElementById("slideout")
 
 btn.addEventListener("click", function () {
     if(content.classList.contains("unactive") == true) {
         content.classList.add("active")
         content.classList.remove("unactive")
+        slideout.classList.add("unactive")
     } else {
         content.classList.remove("active")
         content.classList.add("unactive")
