@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.button, .header__inner-menu-item-cart-content-bottom button, .main__inner-grid-item-btn, .footer button {
+.button, .header__inner-menu-item-cart-content-bottom button, .main__inner-grid-item-btn, .footer button, .shoePopup div button {
   outline: none;
   font-family: "roboto condensed";
   background: white;
@@ -10,13 +10,17 @@
   cursor: pointer;
 }
 
-.button:hover, .header__inner-menu-item-cart-content-bottom button:hover, .main__inner-grid-item-btn:hover, .footer button:hover {
+.button:hover, .header__inner-menu-item-cart-content-bottom button:hover, .main__inner-grid-item-btn:hover, .footer button:hover, .shoePopup div button:hover {
   background: #efa91c;
   transition: 0.4s;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  position: relative;
 }
 
 .container {
@@ -292,6 +296,39 @@
   font-size: 20px;
   text-align: center;
   margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.main__inner-grid-item-name::after {
+  content: "";
+  background: #141414;
+  mix-blend-mode: exclusion;
+  width: calc(100% + 20px);
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -10px;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.main__inner-grid-item-name:hover::after {
+  height: calc(100% + 8px);
+}
+
+.main__inner-grid-item-name:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+.main__inner-grid-item-name::before {
+  content: "";
+  background: #141414;
+  position: absolute;
+  width: calc(100% + 20px);
+  left: -10px;
+  height: 2px;
+  bottom: -4px;
 }
 
 .main__inner-grid-item select {
@@ -336,5 +373,83 @@
 .footer__inner-right img:hover {
   transform: scale(1.2);
   transition: 0.4s;
+}
+
+.shoePopup {
+  display: flex;
+  border: 2px solid black;
+  width: 770px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1000000;
+  background: white;
+  margin-left: -385px;
+  margin-top: -177px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.shoePopup__close {
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.shoePopup__img {
+  height: 350px;
+  border-right: 2px solid black;
+}
+
+.shoePopup div {
+  background: rgba(176, 19, 1, 0.3);
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.shoePopup div p {
+  font-family: "dosis";
+  font-size: 20px;
+}
+
+.shoePopup div select {
+  border: 2px solid black;
+  outline: none;
+  margin-top: 10px;
+  font-family: "dosis";
+  padding: 5px;
+}
+
+.shoePopup div button {
+  margin-top: 15px;
+}
+
+.shoePopup__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shoePopup__top p {
+  margin-right: 15px;
+}
+
+.shoePopup__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#lightbox {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 /*# sourceMappingURL=stylesShop.css.map */

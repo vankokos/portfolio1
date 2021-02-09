@@ -78,16 +78,19 @@ for (let i = 0; i < btnAdd.length; i++) {
         console.log(cartPop)
         var count;
 
+        var itemsInsideCart = document.querySelectorAll(".header__inner-menu-item-cart-content-item")
 
         setTimeout(() => {
             cartPop.classList.add("active")
             cartPop.classList.remove("unactive")
+
             setTimeout(() => {
                 cartPop.classList.remove("active")
                 cartPop.classList.add("unactive")        
             }, 1000);
         }, 100);
         
+
         content.appendChild(cartItem)
         cartItem.appendChild(close)
         cartItem.appendChild(shoeImg)
